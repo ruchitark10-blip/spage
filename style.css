@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #89CFF3, #FDF5A6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Floating sparkles */
+body::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(#ffffff80 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: float 15s linear infinite;
+    opacity: 0.35;
+}
+
+/* Frosted container */
+.container {
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.65);
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    max-width: 600px;
+    border: 1px solid rgba(255,255,255,0.4);
+    animation: smoothDrop 1s ease;
+}
+
+h1 {
+    color: #3066BE;
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px rgba(48,102,190,0.4);
+    animation: pop 1s ease;
+}
+
+p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #2E4057;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 12px;
+    background-color: #FFC93C;
+    color: #2541B2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255,201,60,0.6);
+}
+
+button:hover {
+    background-color: #FFE169;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,225,105,0.9);
+}
+
+/* Hidden section */
+.hidden {
+    display: none;
+}
+
+#note {
+    margin-top: 20px;
+    font-size: 1.05em;
+    color: #2541B2;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#message {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2541B2;
+    animation: fadeInUp 1.3s ease;
+}
+
+/* Image */
+.center-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 18px;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    animation: fadeIn 1.4s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes smoothDrop {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pop {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes float {
+    from { transform: translate(0,0); }
+    to { transform: translate(-300px,-300px); }
+}
+
