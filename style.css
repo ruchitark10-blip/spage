@@ -31,6 +31,7 @@ body::before {
     border-radius: 25px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     max-width: 600px;
+    width: 90%;
     border: 1px solid rgba(255,255,255,0.4);
     animation: smoothDrop 1s ease;
 }
@@ -128,4 +129,41 @@ button:hover {
     from { transform: translate(0,0); }
     to { transform: translate(-300px,-300px); }
 }
+
+/* ✅ MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 25px;
+        border-radius: 18px;
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1em;
+    }
+
+    .center-image {
+        max-width: 300px;
+    }
+
+    #message {
+        font-size: 1.25em;
+    }
+}
+
 
