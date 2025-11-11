@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("pp.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.note-box {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 20px;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #1c1e61;
+    line-height: 1.7;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
