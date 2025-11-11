@@ -8,21 +8,38 @@ body {
     align-items: center;
 }
 
-/* Card container */
+/* Container with A.jpeg background */
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.85);
+
+    /* ✅ A.jpeg as background */
+    background-image: url("A.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     max-width: 600px;
     width: 90%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Foreground image (aesthetic love.jpeg) */
+.center-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 /* Text */
 h1 {
     color: #3066BE;
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin-bottom: 20px;
 }
 
@@ -52,7 +69,6 @@ button:hover {
     transform: scale(1.08);
 }
 
-/* Hidden section */
 .hidden {
     display: none;
 }
@@ -70,17 +86,5 @@ button:hover {
     margin-bottom: 20px;
     color: #2541B2;
 }
-
-/* Image */
-.center-image {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 14px;
-    display: block;
-    margin: 0 auto 20px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-}
-
-
 
 
