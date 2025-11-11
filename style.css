@@ -1,46 +1,46 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: white;   /* ✅ plain white */
+    background: white;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Container with A.jpeg background */
+/* Frosted container with A.jpeg background */
 .container {
     text-align: center;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.45);
 
-    /* ✅ A.jpeg as background */
     background-image: url("A.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    padding: 50px;
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
     max-width: 600px;
     width: 90%;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.4);
 }
 
-/* Foreground image (aesthetic love.jpeg) */
-.center-image {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 14px;
-    display: block;
-    margin: 0 auto 20px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+/* ✅ White box for heading */
+.white-box {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 15px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Text */
 h1 {
     color: #3066BE;
-    font-size: 2.2em;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin: 0;
 }
 
 p {
@@ -69,6 +69,7 @@ button:hover {
     transform: scale(1.08);
 }
 
+/* Hidden section */
 .hidden {
     display: none;
 }
@@ -86,5 +87,17 @@ button:hover {
     margin-bottom: 20px;
     color: #2541B2;
 }
+
+/* Foreground image */
+.center-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
 
 
