@@ -8,13 +8,13 @@ body {
     align-items: center;
 }
 
-/* Frosted container with A.jpeg background */
+/* Frosted container with background */
 .container {
     text-align: center;
     backdrop-filter: blur(14px);
     background: rgba(255, 255, 255, 0.45);
 
-    background-image: url("A.jpeg");
+    background-image: url("1.jpeg"); /* your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,9 +27,9 @@ body {
     border: 1px solid rgba(255,255,255,0.4);
 }
 
-/* ✅ White box for heading */
+/* Heading box */
 .white-box {
-    background: white;
+    background: #6B3E26; /* Dark brown */
     padding: 15px 25px;
     border-radius: 12px;
     display: inline-block;
@@ -37,12 +37,24 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Heading text */
 h1 {
-    color: #3066BE;
+    color: #FFFFFF; /* White */
     font-size: 2em;
     margin: 0;
 }
 
+/* Subtitle / message with dark olive green */
+#message {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #556B2F; /* Dark olive green */
+    text-shadow: 2px 2px 8px #6B3E26; /* Subtle brown glow */
+}
+
+/* Paragraph text */
 p {
     font-size: 1em;
     line-height: 1.6;
@@ -51,41 +63,22 @@ p {
     color: #2E4057;
 }
 
-/* Button */
+/* Button with white text */
 button {
     padding: 12px 25px;
     font-size: 1em;
     border: none;
     border-radius: 12px;
-    background-color: #FFC93C;
-    color: #2541B2;
+    background-color: #6B3E26; /* Dark brown */
+    color: #FFFFFF; /* White text */
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
 }
 
 button:hover {
-    background-color: #FFE169;
+    background-color: #4B2E1F; /* Slightly darker brown on hover */
     transform: scale(1.08);
-}
-
-/* Hidden section */
-.hidden {
-    display: none;
-}
-
-#note {
-    margin-top: 20px;
-    font-size: 0.95em;
-    color: #2541B2;
-}
-
-#message {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2541B2;
 }
 
 /* Foreground image */
@@ -97,6 +90,8 @@ button:hover {
     margin: 0 auto 20px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
+
+
 
 
 
