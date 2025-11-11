@@ -8,8 +8,15 @@
 </head>
 <body>
 
-    <div class="note-box">
-        <p>
+    <!-- Background audio -->
+    <audio id="bgAudio" autoplay loop>
+        <source src="audio.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Note box -->
+    <div class="note-box fade-in">
+        <p>Hey Akash!
             I’m so sorry for the words I said that hurt you. I realize now that I didn’t fully understand what
             you were going through, and I wish I had been there for you the way you needed me. I promise I will
             never hurt you like that again. Your happiness means everything to me, and I want to see you smile
@@ -18,9 +25,27 @@
 
             Sometimes I react or speak without thinking, and I might say things I don’t truly mean. Please forgive
             me for those moments. All I want is to be with you, to support you, and to love you forever. I want us
-            to be together, always. 😔❤️
+            to be together, always.
+            ~ Your's Rucha❤️
         </p>
+
+        <!-- Back Button -->
+        <a href="index.html" id="backBtn">
+            <button class="back-btn">Back</button>
+        </a>
     </div>
+
+    <!-- JS to stop audio when clicking Back -->
+    <script>
+        const backBtn = document.getElementById('backBtn');
+        const bgAudio = document.getElementById('bgAudio');
+
+        backBtn.addEventListener('click', () => {
+            bgAudio.pause();      // Stop the audio
+            bgAudio.currentTime = 0; // Reset to start
+        });
+    </script>
 
 </body>
 </html>
+
